@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap');
+
+:root {
+  --clr-softRed: 10, 79%, 65%;
+  --clr-cyan: 186, 34%, 60%;
+  --clr-darkBrown: 25, 47%, 15%;
+  --clr-mediumBrown: 28, 10%, 53%;
+  --clr-cream: 27, 66%, 92%;
+  --clr-paleOrange: 33, 100%, 98%;
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.125rem;
+  background-color: hsl(var(--clr-cream));
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.bg-softRed {
+  background-color: hsl(var(--clr-softRed));
+}
+
+.bg-paleOrange {
+  background-color: hsl(var(--clr-paleOrange));
+}
+
+.bg-cyan {
+  background-color: hsl(var(--clr-cyan));
+}
+
+.bg-cream {
+  background-color: hsl(var(--clr-cream));
+}
+
+.bg-mediumBrown {
+  background-color: hsl(var(--clr-mediumBrown));
+}
+
+.color-paleOrange {
+  color: hsl(var(--clr-paleOrange));
+}
+
+.price {
+  right: -5px;
+  top: -1.7rem;
+  display: none;
+}
+
+.bar:hover .price {
+  display: block;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
